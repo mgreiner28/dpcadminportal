@@ -62,6 +62,7 @@
                         <th>@lang('quickadmin.purchases.fields.notes')</th>
                         <th>@lang('quickadmin.purchases.fields.internal-notes')</th>
                         <th>@lang('quickadmin.purchases.fields.rates')</th>
+                        <th>@lang('quickadmin.purchases.fields.assigned-to')</th>
                         <th>@lang('quickadmin.purchases.fields.created-by')</th>
                         <th>&nbsp;</th>
                     </tr>
@@ -108,6 +109,7 @@
                                 <td>{!! $purchase->notes !!}</td>
                                 <td>{!! $purchase->internal_notes !!}</td>
                                 <td>{{ $purchase->rates }}</td>
+                                <td>{{ $purchase->assigned_to->name or '' }}</td>
                                 <td>{{ $purchase->created_by->name or '' }}</td>
                                 <td>
                                     @can('purchase_view')

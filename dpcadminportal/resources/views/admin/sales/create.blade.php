@@ -346,6 +346,20 @@
                     @endif
                 </div>
             </div>
+           @if(Auth::user()->isAdmin())
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('assigned_to_id', 'Assigned to*', ['class' => 'control-label']) !!}
+                    {!! Form::select('assigned_to_id', $users, old('assigned_to_id'), ['class' => 'form-control select2', 'required']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('assigned_to_id'))
+                        <p class="help-block">
+                            {{ $errors->first('assigned_to_id') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            @endif
             
         </div>
     </div>

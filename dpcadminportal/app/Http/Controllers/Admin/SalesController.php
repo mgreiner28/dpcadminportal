@@ -48,9 +48,9 @@ class SalesController extends Controller
         if (! Gate::allows('sale_create')) {
             return abort(401);
         }
-        $created_bies = \App\User::get()->pluck('name', 'id')->prepend('Please select', '');
+        $users = \App\User::get()->pluck('name', 'id')->prepend('Please select', '');
 
-        return view('admin.sales.create', compact('created_bies'));
+        return view('admin.sales.create', compact('users'));
     }
 
     /**
@@ -64,6 +64,12 @@ class SalesController extends Controller
         if (! Gate::allows('sale_create')) {
             return abort(401);
         }
+
+        // if user is not admin, then assign to authenticated user.
+        if(!Auth::user()->isAdmin()) {
+        	$request->request->set('assigned_to_id', Auth::user()->id);
+		}
+
         $sale = Sale::create($request->all());
 
 

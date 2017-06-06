@@ -43,7 +43,7 @@ class Sale extends Model
 {
     use SoftDeletes, FilterByUser;
 
-    protected $fillable = ['file_number', 'client', 'property', 'city_town_village', 'county', 'buyer', 'agent', 'buyer_attorney', 'rep_agmt', 'approval_letter', 'buyer_approval_letter', 'search_update', 'survey_update', 'tax_receipts', 'tax_certificate', 'sewer_water_compliance', 'proposed_deed', 'mortgage_commitment', 'seach_taxes_deed', 'mortgage_payoff_info', 'title_report_from_buyer', 'closing_docs_drafted', 'closing_statement', 'closing_statement_to_buyer', 'closing_date', 'notes', 'internal_notes', 'rates', 'created_by_id'];
+    protected $fillable = ['file_number', 'client', 'property', 'city_town_village', 'county', 'buyer', 'agent', 'buyer_attorney', 'rep_agmt', 'approval_letter', 'buyer_approval_letter', 'search_update', 'survey_update', 'tax_receipts', 'tax_certificate', 'sewer_water_compliance', 'proposed_deed', 'mortgage_commitment', 'seach_taxes_deed', 'mortgage_payoff_info', 'title_report_from_buyer', 'closing_docs_drafted', 'closing_statement', 'closing_statement_to_buyer', 'closing_date', 'notes', 'internal_notes', 'rates', 'created_by_id', 'assigned_to_id'];
     
 
     /**
@@ -58,6 +58,11 @@ class Sale extends Model
     public function created_by()
     {
         return $this->belongsTo(User::class, 'created_by_id');
+    }
+
+    public function assigned_to()
+    {
+        return $this->belongsTo(User::class, 'assigned_to_id');
     }
     
 }
