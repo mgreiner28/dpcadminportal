@@ -1,0 +1,698 @@
+/*
+Theme Name: alliance child empire
+Description: child theme of my alliance theme built on bootstrap for empire state ride
+Version: 1
+Author: Meredith Alayne
+Template: alliance
+*/
+
+
+/* Typography */
+
+@font-face {
+    font-family: 'Burford Rustic Black';
+    src: url('/wp-includes/fonts/Burford_Rustic-Light.ttf') format('truetype')
+}
+
+
+#esr h2 {font-family: 'Roboto', sans-serif;}
+#esr h3 {font-family: 'Roboto', sans-serif;}
+#esr h4 {font-family: 'Roboto', sans-serif;}
+#esr h5 {font-family: 'Roboto', sans-serif;}
+#esr h6 {font-family: 'Roboto', sans-serif;}
+#esr p {font-family: 'Roboto', sans-serif;}
+
+h1.hp-section-title {font-size:3.6em;padding-bottom:.9em;font-family: 'Burford Rustic Black', sans-serif; font-weight: 300;text-transform: uppercase; line-height: .9; }
+
+@media screen and (max-width: 990px) {
+    
+ h1.hp-section-title {font-size:3em;padding-bottom:.9em;font-family: 'Burford Rustic Black', sans-serif; font-weight: 300;text-transform: uppercase; line-height: .9; }
+     
+}
+
+@media screen and (max-width: 395px) {
+    
+ h1.hp-section-title {font-size:2em;padding-bottom:.9em;font-family: 'Burford Rustic Black', sans-serif; font-weight: 300;text-transform: uppercase; line-height: .9; }
+     
+}
+
+.page-header  {font-family: 'Oswald', sans-serif; font-weight: 700; text-transform: uppercase; }
+.archive-title {font-family: 'Oswald', sans-serif; font-weight: 700; text-transform: uppercase; }
+
+
+.title-featured {font-family: 'Burford Rustic Black',sans-serif;color:#de8221;letter-spacing:-2px; font-size:3em; line-height:.8;text-shadow: 0 0 .3em #355973,0 0 .3em #355973,0 0 .3em #355973;  }
+.orange-headline {font-family: 'Burford Rustic Black',sans-serif;color:#de8221;letter-spacing:-2px; font-size:4em; line-height:.8; }
+
+#section-1 p {color:#fff;font-size: 1.2em; text-shadow: 0 0 1em #355973,0 0 1em #355973,0 0 1em #355973;}
+
+#post-teaser h4 a {color:#b3b3b3;}
+.post-text {color:#b3b3b3; }
+
+.txt-white {color:#fff;}
+
+
+/* Navigation */
+
+.navbar-esr {background-color:#002045;}
+
+ul#menu-primary {font-family: 'Oswald', sans-serif; font-weight: 700; text-transform: uppercase; }
+ul#menu-primary a {color:#ffffff;}
+ul#menu-primary a:hover {background-color:#002045;}
+ul#menu-primary ul li  {font-family: 'Roboto', sans-serif; font-weight: 700; text-transform: none; }
+ul#menu-primary ul li a {color:#4f748b;}
+ul#menu-primary ul li a:hover {color:#fff;}
+
+.dropdown-menu>.active>a {font-weight: bold;background-color:#fff !important;}
+.dropdown-menu>.active>a:hover {color:#002045 !important; }
+.dropdown-menu>.active>a:focus {color:#fff !important; }
+
+
+
+
+#navigation-mobile .navbar-brand {border-left: 2px solid #d1cbc9;}
+#navigation-mobile .navbar-toggle {margin-left:5px;margin-right: 5px;}
+.navbar-toggle {float:left !important;}
+.icon-bar {background-color: #817d7b;}
+
+
+
+/* Section Syles - General */
+
+#section-1 {background-color: #002045;}
+#section-2 {padding:3em;}
+#section-3 {padding:3em;}
+#section-3 p {color:#4f748b;}
+
+.section {padding-top:3em; padding-bottom:3em;}
+  
+
+/* Blog */
+
+#author-info {}
+#author-thumb {padding-right: 1em; padding-bottom: 1em;}
+
+
+/* xs view */
+@media screen and (max-width: 843px) {
+    #gears {padding-top:5em}
+
+}
+
+
+
+/* Section 1 - Hero */
+
+#hero-text-bar {padding:.01em;background-color:#a45201;opacity:.8; position:absolute;bottom:0;width: 100%; }
+
+#hero-text-bar h3 {color:#fff; font-family: 'Burford Rustic Black', sans-serif; font-weight: 300;text-transform: uppercase; line-height: .9; }
+
+#hero-text-bar h3 a {color:#fff; text-decoration: none; }
+
+.button-text {font-family: 'Oswald', sans-serif; font-weight: 700; text-transform: uppercase; }
+
+.well-feat {opacity:.9; background-color: aliceblue; }
+
+
+/* Section - CTA */
+
+#cta {border-top:4px solid #de8221;}
+
+
+/* Section - Video Gallery */
+
+.hp-thumbnail    {     display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #000;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(/wp-content/uploads/2016/02/poster.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+
+
+/* Section - Video Gallery */
+
+#video-gallery {background-color:#39617a;}
+
+
+#video-gallery .caption {color:#fff;padding-top:1em; font-style:normal;}
+
+.video-container {padding-bottom:4em}
+
+
+@media screen and (max-device-width: 600px) {
+    html {
+         background: url(/wp-content/themes/alliance-child-empire/img/poster.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+
+
+/* Buttons */
+
+.btn-esr {background-color:#a45201; color:#fff;border-radius:0px; }
+.btn-esr-blue {background-color:#4f748b; color:#fff;}
+
+
+
+/* Background Colors & Gradiants */
+
+.grad1 {
+ 
+    background: -webkit-linear-gradient(#002045, #000c1a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#002045, #000c1a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#002045, #000c1a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#002045, #000c1a); /* Standard syntax (must be last) */
+}
+
+.grad2 {  background: -webkit-linear-gradient(#fbfbfe, #d7d7d5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fbfbfe, #d7d7d5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fbfbfe, #d7d7d5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fbfbfe, #d7d7d5); /* Standard syntax (must be last) */}
+
+.bg-black {background-color:#000;}
+
+
+
+	
+/* Circle Buttons */
+
+
+* {
+    margin: 0;
+    padding: 0;
+  	-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+
+	ul.circle-buttons {
+		margin: 30px auto;
+		text-align: center;
+	}
+
+ul.circle-buttons li {
+		list-style: none;
+		position: relative;
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		margin-left:3%;
+		margin-right:3%;
+	}
+
+
+	@-moz-keyframes rotate {
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+
+	@-webkit-keyframes rotate {
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+
+	@-o-keyframes rotate {
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+
+	@keyframes rotate {
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+
+	.round {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		padding-top: 30px;		
+		text-decoration: none;		
+		text-align: center;
+		font-size: 25px;		
+		letter-spacing: -.045em;
+		font-family: Helvetica, Arial, sans-serif;		
+		-webkit-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
+		box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+		border-radius: 300px;
+		z-index: 1;
+		border-width: 4px;
+		border-style: solid;
+	}
+
+	.round:hover {
+		width: 130%;
+		height: 130%;
+		left: -15%;
+		top: -15%;
+		font-size: 33px;
+		padding-top: 38px;
+		-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		-o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		z-index: 2;
+		border-size: 10px;
+		-webkit-transform: rotate(-360deg);
+		-moz-transform: rotate(-360deg);
+		-o-transform: rotate(-360deg);
+		transform: rotate(-360deg);
+	}
+
+	a.orange {
+		background-color: #DD7500;
+		color: #fff;
+		border-color: rgba(133,32,28,.2);
+	}
+
+	a.orange:hover {
+		color: #DD7500;
+	}
+
+	a.aqua {
+		background-color: rgba(1,151,171,1);
+		color: #fff;
+		border-color: rgba(0,63,71,.2);
+	}
+
+	a.aqua:hover {
+		color: rgba(1,151,171,1);
+	}
+
+	a.blue {
+		background-color: #4f758b;
+		color: #fff;
+		border-color: #486f85;
+	}
+
+	a.blue:hover {
+		color: #4f758b;
+	}
+	
+	a.orange-light {
+		background-color: #FCA311;
+		color: #fff;
+		border-color: #ee990d;
+	}
+
+	a.orange-light:hover {
+		color: #FCA311;
+	}
+
+	.round span.round {
+		display: block;
+		opacity: 0;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+		font-size: 1px;
+		border: none;
+		padding: 40% 20% 0 20%;
+		color: #fff;
+	}
+
+	.round span:hover {
+		opacity: .85;
+		font-size: 16px;
+		-webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		-moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		-o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		text-shadow: 0 1px 1px rgba(0,0,0,.5);	
+	}
+
+	.aqua span {
+		background: rgba(0,63,71,.7);		
+	}
+
+	.orange span {
+		background: #DD7500;	
+	}
+
+	.blue span {
+		background: #4f758b;	
+
+	}
+	
+	.orange-light span {
+		background: #FCA311;	
+
+	}
+
+
+/* Footer  */
+
+.footer {background-color:#0e0e0f !important;}
+
+.footer a {color:#eee;}
+.footer a:hover {color:#eee;}
+
+
+/* Footer - Social Icons  */
+
+#social-icons a {color:#353535;}
+#social-icons a:hover {color:#de8221;}
+
+#fb { display:inline-block;}
+#twitter {padding-left:1em; display:inline-block;}
+#instagram {padding-left:1em; display:inline-block;}
+#youtube {padding-left:1em; display:inline-block;}
+
+
+
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+Created on : Jan 12, 2016, 12:54:50 PM
+Author     : an23084
+*/
+#hero {
+  
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+  /* Video Player */
+}
+#hero .intro {
+  background: rgba(0, 0, 0, 0.6);
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  padding: 0 !important;
+  text-align: center;
+  margin-top:2em;
+   margin-bottom:2em;
+}
+#hero .intro header,
+#hero .intro footer {
+  padding: 1em;
+}
+#hero .intro .content {
+  padding: 2em 0.5em 3em;
+}
+#hero .intro header {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px 3px 0 0;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .9em;
+}
+@media (min-width: 960px) {
+  #hero .intro header {
+    font-size: 18px;
+    letter-spacing: 1.25em;
+  }
+}
+
+/*
+#hero .intro header .logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -77.5px;
+  margin-top: -160px;
+}
+*/
+
+#hero .intro .numbers,
+#hero .intro .mission1,
+#hero .intro .mission2 {
+  display: block;}
+
+  
+
+#hero .intro .numbers {
+  color: orange;
+  font-family: 'Oswald', sans;
+  font-weight: 300;
+  font-size: 2em;
+  letter-spacing: .01em;
+}
+@media (min-width: 768px) {
+  #hero .intro .numbers {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 960px) {
+  #hero .intro .numbers {
+    font-size: 3.2em;
+  }
+}
+@media (min-width: 1418px) {
+  #hero .intro .numbers {
+    font-size: 4em;
+    letter-spacing: .05em;
+  }
+}
+#hero .intro .mission1 {
+  font-weight: 300;
+  font-size: 2.25em;
+  letter-spacing: .2em;
+  padding-top: .15em;
+  font-family: 'Burford Rustic Black',sans-serif;color:#fff; 
+}
+@media (min-width: 768px) {
+  #hero .intro .mission1 {
+    font-size: 2.8em;
+  }
+}
+@media (min-width: 960px) {
+  #hero .intro .mission1 {
+    font-size: 3em;
+  }
+}
+@media (min-width: 1418px) {
+  #hero .intro .mission1 {
+    font-size: 3.6em;
+  }
+}
+#hero .intro .mission2 {
+  font-size: 2.45em;
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+@media (min-width: 768px) {
+  #hero .intro .mission2 {
+    font-size: 3.1em;
+  }
+}
+@media (min-width: 960px) {
+  #hero .intro .mission2 {
+    font-size: 3.9em;
+  }
+}
+@media (min-width: 1418px) {
+  #hero .intro .mission2 {
+    font-size: 5.5em;
+  }
+}
+#hero .intro #action-btns {
+  padding-top: 2em;
+}
+#hero .intro #action-btns .btn {
+  font-size: 140%;
+  border: none;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.75);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
+@media (max-width: 767px) {
+  #hero .intro #action-btns .btn:first-child {
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 768px) {
+  #hero .intro #action-btns .btn:first-child {
+    margin-right: 2em;
+  }
+}
+@media (min-width: 1418px) {
+  #hero .intro #action-btns .btn {
+    font-size: 200%;
+  }
+}
+#hero .intro #action-btns .btn:hover {
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#hero .intro footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 3px 3px;
+  font-size: 1.2em;
+  padding: 1em;
+}
+@media (min-width: 768px) {
+  #hero .intro footer {
+    font-size: 20px;
+	letter-spacing: .25em;
+  }
+}
+@media (min-width: 960px) {
+  #hero .intro footer {
+    font-size: 1.3em;
+	letter-spacing: .25em;
+  }
+}
+@media (min-width: 1418px) {
+  #hero .intro footer {
+    font-size: 1.3em;
+	letter-spacing: .25em;
+  }
+}
+#hero video#bgvid {
+  background: url(../img/bg.png) no-repeat;
+  background-size: cover;
+  background-color:#000;
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+
+
+@media (min-width: 1227px) {
+  #hero video#bgvid {
+    top: -110px;
+  }
+}
+
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+Created on : Jan 12, 2016, 1:01:09 PM
+Author     : an23084
+*/
+#static-bar {
+  background: rgba(228, 115, 37, 0.8);
+  padding: 1em 0 .5em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#static-bar .btn.btn-default {
+  background-color: transparent;
+  border-color: #efc190;
+  color: white;
+  margin-right: .5em;
+}
+#static-bar .btn.btn-default:hover {
+  border-color: white;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+Created on : Jan 25, 2016, 10:34:41 AM
+Author     : an23084
+*/
+.section.picture {
+  height: 400px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .section.picture {
+    height: 700px;
+  }
+}
+@media (min-width: 1400px) {
+  .section.picture {
+    height: 850px;
+  }
+}
+.parallax {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .parallax {
+    background-attachment: fixed !important;
+  }
+}
+.parallax#cycle1 {
+  background-image: url(../img/cycle1.jpg);
+}
+
+#teaser
+{padding-bottom: 5em;}
+
+.margin-top-05 { margin-top: 0.5em; }
+.margin-top-10 { margin-top: 1.0em; }
+.margin-top-15 { margin-top: 1.5em; }
+.margin-top-20 { margin-top: 2.0em; }
+.margin-top-25 { margin-top: 2.5em; }
+.margin-top-30 { margin-top: 3.0em; }
+
+.margin-bottom-05 { margin-bottom: 0.5em; }
+.margin-bottom-10 { margin-bottom: 1.0em; }
+.margin-bottom-15 { margin-bottom: 1.5em; }
+.margin-bottom-20 { margin-bottom: 2.0em; }
+.margin-bottom-25 { margin-bottom: 2.5em; }
+.margin-bottom-30 { margin-bottom: 3.0em; }
+
+.btn-orange {
+    color: #fff;
+    background-color: #dd7500;
+    border-color: #f69f10;}
+	
+.btn-blue {
+    color: #fff;
+    background-color: #4f758b;
+    border-color: #456d84;}	
+	

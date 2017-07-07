@@ -1,0 +1,3 @@
+[submodule "alliance"]
+	path = alliance
+	url = git@repos.roswellpark.org:alliance-foundation/wp-alliance-parent.git
