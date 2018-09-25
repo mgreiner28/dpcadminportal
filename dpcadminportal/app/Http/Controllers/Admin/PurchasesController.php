@@ -48,9 +48,9 @@ class PurchasesController extends Controller
         if (! Gate::allows('purchase_create')) {
             return abort(401);
         }
-        $created_bies = \App\User::get()->pluck('name', 'id')->prepend('Please select', '');
+		$users = \App\User::get()->pluck('name', 'id')->prepend('Please select', '');
 
-        return view('admin.purchases.create', compact('created_bies'));
+		return view('admin.purchases.create', compact('users'));
     }
 
     /**
@@ -64,6 +64,11 @@ class PurchasesController extends Controller
         if (! Gate::allows('purchase_create')) {
             return abort(401);
         }
+
+		if(!Auth::user()->isAdmin()) {
+			$request->request->set('assigned_to_id', Auth::user()->id);
+		}
+
         $purchase = Purchase::create($request->all());
 
 

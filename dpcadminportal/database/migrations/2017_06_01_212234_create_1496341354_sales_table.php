@@ -45,7 +45,9 @@ class Create1496341354SalesTable extends Migration
                 $table->string('rates')->nullable();
                 $table->integer('created_by_id')->unsigned()->nullable();
                 $table->foreign('created_by_id', '41729_59305b6a6d6fe')->references('id')->on('users')->onDelete('cascade');
-                
+				$table->integer('assigned_to_id')->unsigned();
+				$table->foreign('assigned_to_id')->references('id')->on('users')->onDelete('cascade');
+
                 $table->timestamps();
                 $table->softDeletes();
 

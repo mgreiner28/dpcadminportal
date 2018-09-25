@@ -33,8 +33,8 @@ trait FilterByUser
             }
 
             if ($addScope) {
-                static::addGlobalScope('created_by_id', function (Builder $builder) use ($currentUser) {
-                    $builder->where('created_by_id', $currentUser->id);
+                static::addGlobalScope('assigned_to', function (Builder $builder) use ($currentUser) {
+                    $builder->where('assigned_to_id', $currentUser->id); // filter by assigned_to.
                 });
             }
         }

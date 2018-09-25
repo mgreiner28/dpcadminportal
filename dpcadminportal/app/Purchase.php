@@ -48,7 +48,7 @@ class Purchase extends Model
 {
     use SoftDeletes, FilterByUser;
 
-    protected $fillable = ['file_number', 'client', 'property', 'city_town_village', 'county', 'seller', 'agent', 'seller_attorney', 'bank_attorney', 'rep_agmt', 'approval_letter', 'seller_approval_letter', 'search_update_received', 'survey_update_received', 'tax_receipts', 'sewer_water_compliance_tax', 'pina', 'proposed_deed_received', 'mortgage_commitment', 'mc_rate_lock_expiration', 'mortgage_commitment_sent_to_seller_attorney', 'survey_taxes_and_deed', 'ordered_title_insurance', 'title_report_to_seller', 'title_report_to_bank', 'hoi_binder', 'hoi_binder_receipts', 'closing_statement_received', 'closing_statement_to_bank', 'closing_date', 'notes', 'internal_notes', 'rates', 'created_by_id'];
+    protected $fillable = ['file_number', 'client', 'property', 'city_town_village', 'county', 'seller', 'agent', 'seller_attorney', 'bank_attorney', 'rep_agmt', 'approval_letter', 'seller_approval_letter', 'search_update_received', 'survey_update_received', 'tax_receipts', 'sewer_water_compliance_tax', 'pina', 'proposed_deed_received', 'mortgage_commitment', 'mc_rate_lock_expiration', 'mortgage_commitment_sent_to_seller_attorney', 'survey_taxes_and_deed', 'ordered_title_insurance', 'title_report_to_seller', 'title_report_to_bank', 'hoi_binder', 'hoi_binder_receipts', 'closing_statement_received', 'closing_statement_to_bank', 'closing_date', 'notes', 'internal_notes', 'rates', 'created_by_id', 'assigned_to_id'];
     
 
     /**
@@ -64,5 +64,10 @@ class Purchase extends Model
     {
         return $this->belongsTo(User::class, 'created_by_id');
     }
-    
+
+	public function assigned_to()
+	{
+		return $this->belongsTo(User::class, 'assigned_to_id');
+	}
+
 }

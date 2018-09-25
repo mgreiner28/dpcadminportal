@@ -57,6 +57,7 @@
                         <th>@lang('quickadmin.sales.fields.notes')</th>
                         <th>@lang('quickadmin.sales.fields.internal-notes')</th>
                         <th>@lang('quickadmin.sales.fields.rates')</th>
+                        <th>@lang('quickadmin.sales.fields.assigned-to')</th>
                         <th>@lang('quickadmin.sales.fields.created-by')</th>
                         <th>&nbsp;</th>
                     </tr>
@@ -98,6 +99,7 @@
                                 <td>{!! $sale->notes !!}</td>
                                 <td>{!! $sale->internal_notes !!}</td>
                                 <td>{{ $sale->rates }}</td>
+                                <td>{{ $sale->assigned_to->name or '' }}</td>
                                 <td>{{ $sale->created_by->name or '' }}</td>
                                 <td>
                                     @can('sale_view')
